@@ -23,8 +23,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/cities" element={<Index />} />
             <Route path="/cities/new" element={<New />} />
-            <Route path="/cities/:index" element={<Show />} />
-            <Route path="/cities/:index/edit" element={<Edit />} />
+            <Route path="/cities/:id" element={<Show />} />
+            <Route path="/cities/:id/edit" element={<Edit />} />
             <Route path="*" element={<FourOFour />} />
           </Routes>
         </main>
