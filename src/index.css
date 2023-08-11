@@ -27,3 +27,16 @@ img {
   display: inline-block;
   margin-right: 10px; /* Adjust the margin as needed for spacing */
 }
+
+.button-container {
+  display: flex; /* Display the buttons in a row */
+  gap: 10px; /* Add a gap of 10px between buttons */
+}
+
+.edit {
+  width: 60%; /* You can adjust the width value as needed */
+}
+
+.visited-text {
+  margin-left: 45px; /* Add margin to the left of the span */
+}
