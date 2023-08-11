@@ -15,7 +15,7 @@ function City({ city }) {
       </p>
       <h6>{city.country}</h6>
       <p className="card-text">Average Ticket Price: ${city.ticket_price.toFixed(2)}</p>
-      <Link className="btn btn-primary" to={`/cities/${city.id}`}>View Comments</Link>
+      <Link className="btn btn-primary" to={`/cities/${city.id}`}>View Details</Link>
     </div>
   </div>
   );

@@ -99,7 +99,7 @@ function CityEditForm() {
 
         <input type="submit" />
       </form>
-      <Link to={`/cities/${id}`}>
+      <Link to={`/cities`}>
         <button>Nevermind!</button>
       </Link>
     </div>

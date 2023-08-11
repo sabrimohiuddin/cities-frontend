@@ -38,7 +38,7 @@ function CityDetails() {
         </h3>
         <h5>
           {city.country} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Ticket Price: ${city.ticket_price.toFixed(2)}
+          Ticket Price: ${city.ticket_price}
         </h5>
         <img src={city.image} alt={`${city.city} Image`} />
         <div className="showNavigation">
@@ -57,7 +57,7 @@ function CityDetails() {
           </div>
         </div>
       </article>
-      <Comments />
+      {/* <Comments /> */}
     </>
   );
 }
