@@ -33,8 +33,8 @@ img {
   gap: 10px; /* Add a gap of 10px between buttons */
 }
 
-.edit {
-  width: 60%; /* You can adjust the width value as needed */
+.text-box {
+  width: 70%; /* You can adjust the width value as needed */
 }
 
 .visited-text {

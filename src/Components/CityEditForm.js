@@ -51,7 +51,7 @@ function CityEditForm() {
   };
 
   return (
-    <div className="edit">
+    <div className="text-box">
 
 <form onSubmit={handleSubmit}>
   <div class="form-group">

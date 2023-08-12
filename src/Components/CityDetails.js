@@ -57,7 +57,7 @@ function CityDetails() {
           </div>
         </div>
       </article>
-      {/* <Comments /> */}
+      <Comments />
     </>
   );
 }

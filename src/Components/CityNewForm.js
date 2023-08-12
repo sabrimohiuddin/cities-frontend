@@ -43,54 +43,91 @@ function CityNewForm() {
   };
 
   return (
-    <div className="New">
+    <div className="New form-group row text-box">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="city">City:</label>
-        <input
-          id="city"
-          value={city.city}
-          type="text"
-          onChange={handleTextChange}
-          placeholder="Name of City"
-          required
-        />
-        <label htmlFor="country">Country:</label>
-        <input
-          id="country"
-          type="text"
-          value={city.country}
-          placeholder="Country of City"
-          onChange={handleTextChange}
-        />
-        <label htmlFor="image">Image URL:</label>
-        <input
-          id="image"
-          type="text"
-          value={city.image}
-          placeholder="http://"
-          onChange={handleTextChange}
-        />
-        <label htmlFor="ticket_price">Ticket Price:</label>
-        <input
-          id="ticket_price"
-          type="number"
-          step="0.01"
-          value={city.ticket_price}
-          placeholder="Ticket Price"
-          onChange={handleTextChange}
-        />
-        <label htmlFor="has_visited">Visited:</label>
-        <input
-          id="has_visited"
-          type="checkbox"
-          onChange={handleCheckboxChange}
-          checked={city.has_visited}
-        />
 
-        <br />
+      <div class="form-group row">
+        <label htmlFor="inputEmail3" class="col-sm-2 col-form-label">City</label>
+        <div class="col-sm-10">
+          <input 
+              type="text" 
+              class="form-control" 
+              id="city" 
+              value={city.city} 
+              placeholder="Enter City" 
+              onChange={handleTextChange}
+              required  />
+        </div>
+      </div>
 
-        <input type="submit" />
-      </form>
+      <div class="form-group row">
+        <label htmlFor="inputcountry3" class="col-sm-2 col-form-label">Country</label>
+        <div class="col-sm-10">
+          <input 
+              type="text" 
+              class="form-control" 
+              id="country" 
+              placeholder="Enter Country" 
+              onChange={handleTextChange} 
+              value={city.country}
+              required />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label htmlFor="inputEmail3" class="col-sm-2 col-form-label">Image URL</label>
+        <div class="col-sm-10">
+          <input 
+                type="text" 
+                class="form-control" 
+                id="image" 
+                placeholder="http://" 
+                onChange={handleTextChange} 
+                value={city.image}
+                required />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label htmlFor="inputEmail3" class="col-sm-2 col-form-label">Hotel Average Price</label>
+        <div class="col-sm-10">
+            <input 
+                type="number" 
+                class="form-control" 
+                step="0.01" 
+                id="ticket_price" 
+                placeholder="Enter Hotel Room Price" 
+                onChange={handleTextChange} 
+                value={city.ticket_price}
+                 />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input 
+                class="form-check-input" 
+                type="checkbox" 
+                id="has_visited" 
+                onChange={handleCheckboxChange} 
+                checked={city.has_visited} />
+            <label class="form-check-label" for="gridCheck1">
+              Visited
+            </label>
+          </div>
+      </div>
+  </div>
+
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+</form>
+
+
     </div>
   );
 }
