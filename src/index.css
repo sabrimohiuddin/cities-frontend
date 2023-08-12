@@ -20,7 +20,7 @@ img {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust grid column sizing as needed */
-  gap: 47px; /* Adjust gap between grid items as needed */
+  gap: 40px; /* Adjust gap between grid items as needed */
 }
 
 .card-title {
@@ -47,7 +47,8 @@ img {
 /* I have copied this part below */
 
 body {
-  background-color: #f7f6f6
+  background-color: #f7f6f6;
+  margin: 20px
 }
 
 .card {

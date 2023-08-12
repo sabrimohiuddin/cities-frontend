@@ -39,7 +39,7 @@ function CommentForm(props) {
   return (
     <div className="Edit">
       {props.children}
-      <form onSubmit={handleSubmit}>
+      <form className="form-inline" action="/action_page.php" onSubmit={handleSubmit}>
         <label htmlFor="commenter">Name:</label>
         <input
           id="commenter"
