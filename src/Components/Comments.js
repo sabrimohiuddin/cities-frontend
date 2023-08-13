@@ -63,7 +63,7 @@ function Comments() {
       <CommentForm handleSubmit={handleAdd}>
       </CommentForm>
 
-      <h2 className="h2-comments">Comments</h2>
+      <h2 className="h2-comments">Comments ({comments ? comments.length : 0})</h2>
       {comments && comments.map((comment) => (
         <Comment
           key={comment.id}
