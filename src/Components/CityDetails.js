@@ -9,9 +9,16 @@ function CityDetails() {
   let { id } = useParams();
   let navigate = useNavigate();
 
+  // const handleDelete = () => {
+  //   deleteCity();
+  // };
+
   const handleDelete = () => {
-    deleteCity();
-  };
+    if (window.confirm("Are you sure you want to delete this city?")) {
+        deleteCity();
+    }
+};
+
 
   useEffect(() => {
     axios.get(`${API}/cities/${id}`).then((response) => {
@@ -60,3 +67,4 @@ function CityDetails() {
 }
 
 export default CityDetails;
+
