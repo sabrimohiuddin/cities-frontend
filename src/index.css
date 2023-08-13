@@ -62,33 +62,11 @@ body {
 .dots{
 
   height: 4px;
-width: 4px;
-margin-bottom: 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-}
-
-.badge{
-
-  padding: 7px;
-  padding-right: 9px;
-  padding-left: 16px;
-  box-shadow: 5px 6px 6px 2px #e9ecef;
-}
-
-.user-img{
-
-  margin-top: 4px;
-}
-
-.check-icon{
-
-  font-size: 17px;
-  color: #c3bfbf;
-  top: 1px;
-  position: relative;
-  margin-left: 3px;
+  width: 4px;
+  margin-bottom: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .form-check-input{
@@ -103,25 +81,37 @@ display: inline-block;
 }
 
 
-.icons i{
-
-  margin-left: 8px;
-}
-.reply{
+.remove-edit{
 
   margin-left: 12px;
 }
 
-.reply small{
-
+.remove-edit small{
   color: #b7b4b4;
-
 }
 
-
-.reply small:hover{
-
-  color: green;
+.remove-edit small:hover{
+  color: purple;
   cursor: pointer;
+}
 
+article {
+  display: flex;
+  justify-content: center;
+  /* height: 100vh; */
+}
+
+.showNavigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px; /* Add margin for spacing */
+  gap: 1px;
+  margin-bottom: 50px;
+  
+}
+
+.addcomment{
+  display: flex;
+  justify-content: center;
 }

@@ -32,31 +32,29 @@ function CityDetails() {
 
   return (
     <>
-      <article>
-        <h3>
-          {city.has_visited ? <span>✅</span> : null} {city.city}
-        </h3>
-        <h5>
+        <h3>{city.city}</h3>
           {city.country} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <h5>
           Ticket Price: ${city.ticket_price}
         </h5>
-        <img src={city.image} alt={`${city.city} Image`} />
+      <article>
+        <img className="cityimage" src={city.image} alt={`${city.city} Image`} />
+      </article>
         <div className="showNavigation">
           <div>
             <Link to={`/cities`}>
-              <button>Back</button>
+              <button className="btn btn-success">Back</button>
             </Link>
           </div>
           <div>
             <Link to={`/cities/${id}/edit`}>
-              <button>Edit</button>
+              <button className="btn btn-warning" >Edit</button>
             </Link>
           </div>
           <div>
-            <button onClick={handleDelete}>Delete</button>
+            <button className="btn btn-danger" onClick={handleDelete}>Delete</button>
           </div>
         </div>
-      </article>
       <Comments />
     </>
   );

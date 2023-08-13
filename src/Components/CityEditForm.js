@@ -54,12 +54,12 @@ function CityEditForm() {
     <div className="text-box">
 
 <form onSubmit={handleSubmit}>
-  <div class="form-group">
+  <div className="form-group">
     <label htmlFor="city"> </label>
     <input 
         type="text" 
         value={city.city}
-        class="form-control shorter-input" 
+        className="form-control shorter-input" 
         id="city" 
         aria-describedby="cityHelp"
         onChange={handleTextChange} 
@@ -68,12 +68,12 @@ function CityEditForm() {
         />
   </div>
 
-  <div class="form-group">
+  <div className="form-group">
     <label htmlFor="country"> </label>
     <input 
         type="text" 
         value={city.country}
-        class="form-control" 
+        className="form-control" 
         id="country" 
         aria-describedby="countryHelp"
         onChange={handleTextChange} 
@@ -81,12 +81,12 @@ function CityEditForm() {
         />
   </div>
 
-  <div class="form-group">
+  <div className="form-group">
     <label htmlFor="image"> </label>
     <input 
         type="text" 
         value={city.image}
-        class="form-control" 
+        className="form-control" 
         id="image" 
         aria-describedby="imageHelp"
         onChange={handleTextChange} 
@@ -94,12 +94,12 @@ function CityEditForm() {
         />
   </div>
 
-  <div class="form-group">
+  <div className="form-group">
     <label htmlFor="ticket_price"> </label>
     <input 
         type="number" 
         value={city.ticket_price}
-        class="form-control" 
+        className="form-control" 
         id="ticket_price" 
         aria-describedby="ticket_cityHelp"
         onChange={handleTextChange}
@@ -108,22 +108,22 @@ function CityEditForm() {
         />
   </div>
 
-  <div class="form-check">
+  <div className="form-check">
     <input 
         id="has_visited"
         type="checkbox" 
         onChange={handleCheckboxChange} 
-        class="form-check-input"
+        // className="form-check-input"
         checked={city.has_visited} 
         />
-    <label class="form-check-label" for="exampleCheck1">Visited</label>
+    <label className="form-check-label" for="exampleCheck1">Visited</label>
   </div>
 
-  <div class="button-container">
-      <button type="submit" class="btn btn-primary">Submit</button>
+  <div className="button-container">
+      <button type="submit" className="btn btn-primary">Submit</button>
 
       <Link to={`/cities`} >
-            <button class="btn btn-outline-secondary">Nevermind!</button>
+            <button className="btn btn-outline-secondary">Nevermind!</button>
       </Link>
   </div>
 

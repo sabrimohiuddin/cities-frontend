@@ -47,67 +47,42 @@ function Comment({ comment, handleDelete, handleSubmit }) {
 
 <div className="row  d-flex justify-content-center">
 
-    <div className="col-md-8">
+  <div className="col-md-8">
 
-        {/* <div className="headings d-flex justify-content-between align-items-center mb-3">
-            <h5>Unread comments(6)</h5>
+      {/* <div className="headings d-flex justify-content-between align-items-center mb-3">
+          <h5>Unread comments(6)</h5>
 
-            //So hum... we might need to work on that, but this part is optional
-            
-        </div> */}
-
-
-
-        <div className="card p-3">
-
-            <div className="d-flex justify-content-between align-items-center">
-
-          <div className="user d-flex flex-row align-items-center">
-
-            
-            <span><small className="font-weight-bold text-primary">{comment.commenter}</small> <small className="font-weight-bold">{comment.content}</small></span>
-              
-          </div>
+          //So hum... we might need to work on that, but this part is optional
+          
+      </div> */}
 
 
-          </div>
 
+    <div className="card p-3">
 
-          <div className="action d-flex justify-content-between mt-2 align-items-center">
-
-            <div className="reply px-4">
-                <small onClick={() => handleDelete(comment.id)}> Remove</small>
-                <span className="dots"></span>
-                <small onClick={toggleView}>Edit</small>
-               
-               
-            </div>
-
-            <div className="icons align-items-center">
-
-                <i className="fa fa-star text-warning"></i>
-                <i className="fa fa-check-circle-o check-icon"></i>
-                
-            </div>
-              
-          </div>
-
-
-            
+      <div className="d-flex justify-content-between align-items-center">
+        <div className="user d-flex flex-row align-items-center">
+          <span><small className="font-weight-bold text-primary">{comment.commenter}</small> <small className="font-weight-bold">{comment.content}</small></span>  
         </div>
+      <small style={{color: 'green', fontSize: '18px', fontWeight:'bold'}}>{comment.title}</small>
+      </div>
 
 
+      <div className="action d-flex justify-content-between mt-2 align-items-center">
+        <div className="remove-edit">
+            <small onClick={() => handleDelete(comment.id)}> Remove</small>
+            <span className="dots"></span>
+            <small onClick={toggleView}>Edit</small>
+        </div>   
+      </div>
 
-        
     </div>
+
+  </div>
     
 </div>)}
          
-
 </div>
-
-
-
   );
 }
   

@@ -37,27 +37,37 @@ function CommentForm(props) {
   };
 
   return (
-    <div className="Edit">
-      {props.children}
-      <form className="form-inline" action="/action_page.php" onSubmit={handleSubmit}>
-        <label htmlFor="commenter">Name:</label>
-        <input
+    
+    <form className="form-inline addcomment" action="/action_page.php" onSubmit={handleSubmit}>
+    {/* <div className="form-inline form-group">
+      {props.children} */}
+
+      <div className="form-group mb-2">
+        <label htmlFor="staticName2"
+                className="sr-only">Name:</label>
+        
+        <input   
           id="commenter"
           value={comment.commenter}
           type="text"
           onChange={handleTextChange}
           placeholder="Your name"
           required
+
         />
+        </div>
+
+      <div className="form-group mx-sm-3 mb-2">
         <label htmlFor="title">Title:</label>
         <input
           id="title"
           type="text"
-          required
           value={comment.title}
           onChange={handleTextChange}
         />
-        <label htmlFor="content">Comment:</label>
+      </div>
+      
+        <label htmlFor="content">Note:</label>
         <textarea
           id="content"
           type="text"
@@ -69,9 +79,9 @@ function CommentForm(props) {
 
         <br />
 
-        <input type="submit" />
+        <input className="btn btn-primary mb-2" type="submit" />
+    {/* </div> */}
       </form>
-    </div>
   );
 }
 

@@ -46,12 +46,12 @@ function CityNewForm() {
     <div className="New form-group row text-box">
       <form onSubmit={handleSubmit}>
 
-      <div class="form-group row">
-        <label htmlFor="inputEmail3" class="col-sm-2 col-form-label">City</label>
-        <div class="col-sm-10">
+      <div className="form-group row">
+        <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">City</label>
+        <div className="col-sm-10">
           <input 
               type="text" 
-              class="form-control" 
+              className="form-control" 
               id="city" 
               value={city.city} 
               placeholder="Enter City" 
@@ -60,12 +60,12 @@ function CityNewForm() {
         </div>
       </div>
 
-      <div class="form-group row">
-        <label htmlFor="inputcountry3" class="col-sm-2 col-form-label">Country</label>
-        <div class="col-sm-10">
+      <div className="form-group row">
+        <label htmlFor="inputcountry3" className="col-sm-2 col-form-label">Country</label>
+        <div className="col-sm-10">
           <input 
               type="text" 
-              class="form-control" 
+              className="form-control" 
               id="country" 
               placeholder="Enter Country" 
               onChange={handleTextChange} 
@@ -74,12 +74,12 @@ function CityNewForm() {
         </div>
       </div>
 
-      <div class="form-group row">
-        <label htmlFor="inputEmail3" class="col-sm-2 col-form-label">Image URL</label>
-        <div class="col-sm-10">
+      <div className="form-group row">
+        <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Image URL</label>
+        <div className="col-sm-10">
           <input 
                 type="text" 
-                class="form-control" 
+                className="form-control" 
                 id="image" 
                 placeholder="http://" 
                 onChange={handleTextChange} 
@@ -88,12 +88,12 @@ function CityNewForm() {
         </div>
       </div>
 
-      <div class="form-group row">
-        <label htmlFor="inputEmail3" class="col-sm-2 col-form-label">Hotel Average Price</label>
-        <div class="col-sm-10">
+      <div className="form-group row">
+        <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Hotel Average Price</label>
+        <div className="col-sm-10">
             <input 
                 type="number" 
-                class="form-control" 
+                className="form-control" 
                 step="0.01" 
                 id="ticket_price" 
                 placeholder="Enter Hotel Room Price" 
@@ -103,26 +103,26 @@ function CityNewForm() {
         </div>
       </div>
 
-      <div class="form-group row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-10">
-          <div class="form-check">
+      <div className="form-group row">
+        <div className="col-sm-2"></div>
+        <div className="col-sm-10">
+          <div className="form-check">
             <input 
-                class="form-check-input" 
+                // className="form-check-input" 
                 type="checkbox" 
                 id="has_visited" 
                 onChange={handleCheckboxChange} 
                 checked={city.has_visited} />
-            <label class="form-check-label" for="gridCheck1">
+            <label className="form-check-label" for="gridCheck1">
               Visited
             </label>
           </div>
       </div>
   </div>
 
-      <div class="form-group row">
-        <div class="col-sm-10">
-          <button type="submit" class="btn btn-primary">Submit</button>
+      <div className="form-group row">
+        <div className="col-sm-10">
+          <button type="submit" className="btn btn-primary">Submit</button>
         </div>
       </div>
 </form>
