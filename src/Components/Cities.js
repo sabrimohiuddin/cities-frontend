@@ -16,6 +16,7 @@ function Cities() {
 
   return (
     <div className="Cities">
+      <h1>{cities.length}</h1>
       <tbody className="grid-container">
         {cities.map((city) => {
           return <City key={city.id} city={city} />;
