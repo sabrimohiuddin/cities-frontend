@@ -62,6 +62,7 @@ function CommentForm(props) {
         <input
           id="title"
           type="text"
+          placeholder="Add Comment Title"
           value={comment.title}
           onChange={handleTextChange}
         />
@@ -80,7 +81,6 @@ function CommentForm(props) {
         <br />
 
         <input className="btn btn-primary mb-2" type="submit" />
-    {/* </div> */}
       </form>
   );
 }

@@ -91,14 +91,13 @@ body {
 }
 
 .remove-edit small:hover{
-  color: purple;
+  color: rgb(165, 82, 165);
   cursor: pointer;
 }
 
 article {
   display: flex;
   justify-content: center;
-  /* height: 100vh; */
 }
 
 .showNavigation {
@@ -112,6 +111,13 @@ article {
 }
 
 .addcomment{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.h2-comments{
   display: flex;
   justify-content: center;
 }

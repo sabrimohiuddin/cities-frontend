@@ -32,11 +32,10 @@ function CityDetails() {
 
   return (
     <>
-        <h3>{city.city}</h3>
-          {city.country} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <h5>
-          Ticket Price: ${city.ticket_price}
-        </h5>
+        <h3>{city.city},&nbsp;<small>{city.country}</small></h3>
+        <h6>
+          Hotel Price: ${city.ticket_price}
+        </h6>
       <article>
         <img className="cityimage" src={city.image} alt={`${city.city} Image`} />
       </article>

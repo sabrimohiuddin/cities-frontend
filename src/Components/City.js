@@ -7,7 +7,7 @@ function City({ city }) {
     <div className="card-body">
       <h4 className="card-title">{city.city}</h4>
       <h6>{city.country}</h6>
-      <p className="card-text">Average Ticket Price: ${city.ticket_price.toFixed(2)}</p>
+      <p className="card-text">Average Hotel Price: ${city.ticket_price.toFixed(2)}</p>
 
       <div className="details-button">
         <Link className="btn btn-primary" to={`/cities/${city.id}`}>View Details</Link>
