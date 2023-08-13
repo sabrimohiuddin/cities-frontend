@@ -122,7 +122,7 @@ function CityEditForm() {
   <div className="button-container">
       <button type="submit" className="btn btn-primary">Submit</button>
 
-      <Link to={`/cities`} >
+      <Link to={`/cities/${id}`} >
             <button className="btn btn-outline-secondary">Nevermind!</button>
       </Link>
   </div>
