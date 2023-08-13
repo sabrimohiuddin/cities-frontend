@@ -59,10 +59,11 @@ function Comments() {
 
   return (
     <section className="Comments">
-      <h2>Comments</h2>
-      <CommentForm handleSubmit={handleAdd}>
         <h3>Add a New Comment</h3>
+      <CommentForm handleSubmit={handleAdd}>
       </CommentForm>
+
+      <h2 className="h2-comments">Comments</h2>
       {comments && comments.map((comment) => (
         <Comment
           key={comment.id}
