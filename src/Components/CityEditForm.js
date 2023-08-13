@@ -51,58 +51,85 @@ function CityEditForm() {
   };
 
   return (
-    <div className="Edit">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="city">City:</label>
-        <input
-          id="city"
-          value={city.city}
-          type="text"
-          onChange={handleTextChange}
-          placeholder="Name of City"
-          required
-        />
-        <label htmlFor="country">Country:</label>
-        <input
-          id="country"
-          type="text"
-          value={city.country}
-          placeholder="Country of City"
-          onChange={handleTextChange}
-        />
-        <label htmlFor="image">Image URL:</label>
-        <input
-          id="image"
-          type="text"
-          value={city.image}
-          placeholder="http://"
-          onChange={handleTextChange}
-        />
-        <label htmlFor="ticket_price">Ticket Price:</label>
-        <input
-          id="ticket_price"
-          type="number"
-          step="0.01"
-          value={city.ticket_price}
-          placeholder="Ticket Price"
-          onChange={handleTextChange}
-        />
-        <label htmlFor="has_visited">Visited:</label>
-        <input
-          id="has_visited"
-          type="checkbox"
-          onChange={handleCheckboxChange}
-          checked={city.has_visited}
-        />
+    <div className="text-box">
 
-        <br />
+<form onSubmit={handleSubmit}>
+  <div className="form-group">
+    <label htmlFor="city"> </label>
+    <input 
+        type="text" 
+        value={city.city}
+        className="form-control shorter-input" 
+        id="city" 
+        aria-describedby="cityHelp"
+        onChange={handleTextChange} 
+        placeholder="Enter City"
+        required 
+        />
+  </div>
 
-        <input type="submit" />
-      </form>
-      <Link to={`/cities/${id}`}>
-        <button>Nevermind!</button>
+  <div className="form-group">
+    <label htmlFor="country"> </label>
+    <input 
+        type="text" 
+        value={city.country}
+        className="form-control" 
+        id="country" 
+        aria-describedby="countryHelp"
+        onChange={handleTextChange} 
+        placeholder="Enter Country"
+        />
+  </div>
+
+  <div className="form-group">
+    <label htmlFor="image"> </label>
+    <input 
+        type="text" 
+        value={city.image}
+        className="form-control" 
+        id="image" 
+        aria-describedby="imageHelp"
+        onChange={handleTextChange} 
+        placeholder="Enter Image URL"
+        />
+  </div>
+
+  <div className="form-group">
+    <label htmlFor="ticket_price"> </label>
+    <input 
+        type="number" 
+        value={city.ticket_price}
+        className="form-control" 
+        id="ticket_price" 
+        aria-describedby="ticket_cityHelp"
+        onChange={handleTextChange}
+        step="0.01" 
+        placeholder="Enter Hotel Room Average Price"
+        />
+  </div>
+
+  <div className="form-check">
+    <input 
+        id="has_visited"
+        type="checkbox" 
+        onChange={handleCheckboxChange} 
+        // className="form-check-input"
+        checked={city.has_visited} 
+        />
+    <label className="form-check-label" for="exampleCheck1">Visited</label>
+  </div>
+
+  <div className="button-container">
+      <button type="submit" className="btn btn-primary">Submit</button>
+
+      <Link to={`/cities`} >
+            <button className="btn btn-outline-secondary">Nevermind!</button>
       </Link>
-    </div>
+  </div>
+
+
+</form>
+    </div> 
   );
 }
 

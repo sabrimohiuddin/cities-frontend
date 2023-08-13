@@ -32,31 +32,28 @@ function CityDetails() {
 
   return (
     <>
+        <h3>{city.city},&nbsp;<small>{city.country}</small></h3>
+        <h6>
+          Hotel Price: ${city.ticket_price}
+        </h6>
       <article>
-        <h3>
-          {city.has_visited ? <span>✅</span> : null} {city.city}
-        </h3>
-        <h5>
-          {city.country} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Ticket Price: ${city.ticket_price.toFixed(2)}
-        </h5>
-        <img src={city.image} alt={`${city.city} Image`} />
+        <img className="cityimage" src={city.image} alt={`${city.city} Image`} />
+      </article>
         <div className="showNavigation">
           <div>
             <Link to={`/cities`}>
-              <button>Back</button>
+              <button className="btn btn-success">Back</button>
             </Link>
           </div>
           <div>
             <Link to={`/cities/${id}/edit`}>
-              <button>Edit</button>
+              <button className="btn btn-warning" >Edit</button>
             </Link>
           </div>
           <div>
-            <button onClick={handleDelete}>Delete</button>
+            <button className="btn btn-danger" onClick={handleDelete}>Delete</button>
           </div>
         </div>
-      </article>
       <Comments />
     </>
   );

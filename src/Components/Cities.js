@@ -16,25 +16,11 @@ function Cities() {
 
   return (
     <div className="Cities">
-      <section>
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Country</th>
-              <th>Image</th>
-              <th>Visited</th>
-              <th>Ticket Price</th>
-              <th>View Comments</th>
-            </tr>
-          </thead>
-          <tbody>
-            {cities.map((city) => {
-              return <City key={city.id} city={city} />;
-            })}
-          </tbody>
-        </table>
-      </section>
+      <tbody className="grid-container">
+        {cities.map((city) => {
+          return <City key={city.id} city={city} />;
+        })}
+      </tbody>
     </div>
   );
 }
